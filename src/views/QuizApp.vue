@@ -18,7 +18,9 @@
         {{ "選択肢3" }}
       </button>
     </div>
-    <div>{{ "答え" }}</div>
+    <div>答え</div>
+    <!--     
+    <div>{{ "答え" }}</div> -->
   </div>
 </template>
 
