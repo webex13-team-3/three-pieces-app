@@ -2,20 +2,17 @@
   <div class="home">
     <div class="left">
       <div class="leftbox">
-        <div class="teamname">こんにちは</div>
-        <div class="name">
-          <p>Satsuki Fukushima</p>
-          <p>Miku Akimoto</p>
-          <p>EEri Morifuji</p>
-        </div>
+        <div class="teamname">原宿ガールズ🍭</div>
       </div>
     </div>
 
     <div class="right">
       <div class="rightbox">
-        <p>クイズ</p>
-        <p>Vueパレット</p>
-        <p>メモ</p>
+        <div class="name">
+          <p>Satsuki Fukushima</p>
+          <p>Miku Akimoto</p>
+          <p>Eri Morifuji</p>
+        </div>
       </div>
     </div>
   </div>
@@ -24,6 +21,10 @@
 <script></script>
 
 <style>
+body {
+  background-image: url(../assets/6057300.jpg);
+  background-size: cover;
+}
 .home {
   display: flex;
   width: 100%;
@@ -44,7 +45,7 @@
 .leftbox {
   position: absolute;
   top: 40%;
-  left: 30%;
+  left: 28%;
 }
 .teamname {
   font-size: 30px;
@@ -59,5 +60,10 @@
   top: 40%;
   left: 60%;
   font-size: 30px;
+
+  font-weight: bold;
+}
+p {
+  font-family: TsukuARdGothic-Regular;
 }
 </style>
