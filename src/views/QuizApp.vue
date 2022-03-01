@@ -1,29 +1,37 @@
 <template>
   <h1>Vue クイズ</h1>
   <div class="app">
-    <h2>Q. {{ "クイズタイトル" }}</h2>
-    <img
-      class="quiz-image"
-      src="https://via.placeholder.com/300x300"
-      alt="クイズタイトル"
-    />
+    <h2>Q. {{ "アブラカタブラの以外な意味とは？" }}</h2>
+    <img class="quiz-image" src="" alt="クイズタイトル" />
     <div class="container">
       <button>
-        {{ "選択肢1" }}
+        {{ "いただきます" }}
       </button>
       <button>
-        {{ "選択肢2" }}
+        {{ "悪霊退散" }}
       </button>
-      <button>
-        {{ "選択肢3" }}
+      <button v-on:click="hyouji">
+        {{ "花粉症対策" }}
       </button>
     </div>
-    <div>{{ "答え" }}</div>
+
+    <div v-if="seen">{{ "正解！" }}</div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      seen: false,
+    }
+  },
+  methods: {
+    hyouji: function () {
+      this.seen = true
+    },
+  },
+}
 </script>
 
 <style>
