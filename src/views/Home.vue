@@ -117,7 +117,7 @@ p {
 .container-box {
   text-align: center;
   width: 100%;
-  background-color: rgba(248, 180, 180, 0.719);
+  background-color: rgba(241, 182, 182, 0.719);
   height: 200px;
   width: 300px;
   margin: 10px;
